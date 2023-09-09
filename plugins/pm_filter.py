@@ -216,7 +216,7 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -225,7 +225,7 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -238,7 +238,7 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -247,9 +247,8 @@ async def next_page(bot, query):
             btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
-                ]
             )
     try:
         settings = await get_settings(query.message.chat.id)
@@ -1998,8 +1997,8 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -2007,8 +2006,8 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -2020,8 +2019,8 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
@@ -2029,8 +2028,8 @@ async def auto_filter(client, msg, spoll=False):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total_results}', 'dupe'),
-                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton(f'🗂 ꜰɪʟᴇs: {total}', 'dupe'),
+                    InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
                 ]
             )
