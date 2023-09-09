@@ -121,6 +121,8 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]
 
+SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
+
 # Delete Time
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
 IMDB_DLT_TIME = int(environ.get('IMDB_DLT_TIME', 300))
